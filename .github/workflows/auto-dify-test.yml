@@ -2,7 +2,7 @@ name: Auto-dify-test
 
 on:
   schedule:
-    - cron: "0 16 * * *"   # 北京时间24:00（即次日0:00）执行
+    - cron: "*/5 * * * *"   # 每隔5分钟执行一次
   workflow_dispatch:
 
 env:
